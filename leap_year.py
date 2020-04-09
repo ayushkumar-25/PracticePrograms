@@ -1,4 +1,4 @@
-def year(er):
+def year():
 
     
     if (y%4==0):
@@ -14,6 +14,6 @@ def year(er):
 
 for i in range (0,5):
     y = int(input("\nEnter the year: "))
-    year(y)
+    year()
 
 
