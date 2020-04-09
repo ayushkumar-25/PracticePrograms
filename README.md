@@ -1,2 +1,2 @@
 # PracticePrograms
-For my personal use.
+Python and C programs.
