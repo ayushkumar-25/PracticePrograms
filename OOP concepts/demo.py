@@ -1,10 +1,12 @@
 class Computer:
-    def config():
+    def config(self):
         print("i5, 16GB, 1TB")
 
-a = 9
 com1 = Computer()
-print(type(a))
-print(type(com1))
+com2 = Computer()
 
-'''a is object of int(in-built) and com1 is object of Computer(user defined)'''
+Computer.config(com1)
+Computer.config(com2)
+
+com1.config()
+com1.config()
