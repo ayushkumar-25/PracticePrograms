@@ -1,19 +1,16 @@
 class Computer:
     
-    def __init__(self):
-        print("init")
+    def __init__(self, cpu, ram):
+        self.cpu = cpu
+        self.ram = ram
     
     def config(self):
-        print("i5, 16GB, 1TB")
+        print('Config: ', self.cpu, self.ram)
 
 
-com1 = Computer()
-com2 = Computer()
-com3 = Computer()
+com1 = Computer('i5', 16)
+com2 = Computer('Ryzen 3', 8)
 
 
-com1.config()
+Computer.config(com1)
 com2.config()
-
-# __init__ will be automatically called for each object created.
-# Here 3 objects is created (com1, com2, com3) therefore __init__ will be called for 3 times.
